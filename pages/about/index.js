@@ -31,17 +31,17 @@ const aboutData = [
       {
         title: "Frontend Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
+          <FaHtml5 key={0} />,
+          <FaCss3 key={1} />,
+          <FaJs key={2} />,
+          <FaReact key={3} />,
+          <SiNextdotjs key={4} />,
+          <SiFramer key={5} />,
         ],
       },
       {
         title: "Backend Development",
-        icons: [<FaNodeJs />, <SiExpress />, <SiMongodb /> ,<AiFillDatabase />,<SiPayloadcms /> ],
+        icons: [<FaNodeJs key={0} />, <SiExpress key={1} />, <SiMongodb key={2} /> ,<AiFillDatabase key={3} />,<SiPayloadcms key={4} /> ],
       },
     ],
   },
@@ -100,7 +100,7 @@ const About = () => {
           >
             I am Ritik, a full stack web developer with a passion for creating beautiful, 
             functional and user-centered digital experiences. I believe that design is about 
-            more than just making things look pretty - it's about solving problems and creating intuitive, 
+            more than just making things look pretty - it&apos;s about solving problems and creating intuitive, 
             enjoyable experiences for users.
           </motion.p>
           {/* <motion.div
@@ -196,7 +196,7 @@ const About = () => {
                   <div >{item.stage}</div>
                   <div className="flex gap-x-4">
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div className="text-2xl text-white">{icon}</div>;
+                      return <div className="text-2xl text-white" key={itemIndex} >{icon}</div>;
                     })}
                   </div>
                 </div>
