@@ -65,10 +65,10 @@ const aboutData = [
         title: "Web Developer Intern - Sapy MediaTech Pvt. Ltd",
         stage: " 2023 (Apr-July)",
       },
-      {
-        title: "Intern - ReadyCoder Pvt. Ltd",
-        stage: "Summer 2023",
-      },
+      // {
+      //   title: "Intern - ReadyCoder Pvt. Ltd",
+      //   stage: "Summer 2023",
+      // },
     ],
   },
 ];
